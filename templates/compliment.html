@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/madlibs.css">
+  <title>A Game</title>
+</head>
+<body>
+    Hi {{ person }}! Do you want to play a game?!
+
+    <form action="/game" method="GET">
+        <input type="radio" name="gamechoice" value="yes">Yes
+        <input type="radio" name="gamechoice" value="no">No
+        <input type="submit">
+
+    </form>
+</body>
+</html>
+
